@@ -52,55 +52,111 @@ function App() {
   return (
     <main className="App">
       <section id="display">{display}</section>
-      <button id="equals" onClick={handleEqualsClick} className="button">
+      <button
+        id="equals"
+        onClick={handleEqualsClick}
+        className="button bg-teal"
+      >
         =
       </button>
-      <button id="zero" onClick={handleNumberClick} className="button">
+      <button
+        id="zero"
+        onClick={handleNumberClick}
+        className="button bg-lightgray"
+      >
         0
       </button>
-      <button id="one" onClick={handleNumberClick} className="button">
+      <button
+        id="one"
+        onClick={handleNumberClick}
+        className="button bg-lightgray"
+      >
         1
       </button>
-      <button id="two" onClick={handleNumberClick} className="button">
+      <button
+        id="two"
+        onClick={handleNumberClick}
+        className="button bg-lightgray"
+      >
         2
       </button>
-      <button id="three" onClick={handleNumberClick} className="button">
+      <button
+        id="three"
+        onClick={handleNumberClick}
+        className="button bg-lightgray"
+      >
         3
       </button>
-      <button id="four" onClick={handleNumberClick} className="button">
+      <button
+        id="four"
+        onClick={handleNumberClick}
+        className="button bg-lightgray"
+      >
         4
       </button>
-      <button id="five" onClick={handleNumberClick} className="button">
+      <button
+        id="five"
+        onClick={handleNumberClick}
+        className="button bg-lightgray"
+      >
         5
       </button>
-      <button id="six" onClick={handleNumberClick} className="button">
+      <button
+        id="six"
+        onClick={handleNumberClick}
+        className="button bg-lightgray"
+      >
         6
       </button>
-      <button id="seven" onClick={handleNumberClick} className="button">
+      <button
+        id="seven"
+        onClick={handleNumberClick}
+        className="button bg-lightgray"
+      >
         7
       </button>
-      <button id="eight" onClick={handleNumberClick} className="button">
+      <button
+        id="eight"
+        onClick={handleNumberClick}
+        className="button bg-lightgray"
+      >
         8
       </button>
-      <button id="nine" onClick={handleNumberClick} className="button">
+      <button
+        id="nine"
+        onClick={handleNumberClick}
+        className="button bg-lightgray"
+      >
         9
       </button>
-      <button id="add" onClick={handleOperatorClick} className="button">
+      <button id="add" onClick={handleOperatorClick} className="button bg-teal">
         +
       </button>
-      <button id="subtract" onClick={handleOperatorClick} className="button">
+      <button
+        id="subtract"
+        onClick={handleOperatorClick}
+        className="button bg-teal"
+      >
         -
       </button>
-      <button id="multiply" onClick={handleOperatorClick} className="button">
+      <button
+        id="multiply"
+        onClick={handleOperatorClick}
+        className="button bg-teal"
+      >
         *
       </button>
-      <button id="divide" onClick={handleOperatorClick} className="button">
+      <button
+        id="divide"
+        onClick={handleOperatorClick}
+        className="button bg-teal"
+      >
         /
       </button>
       <button id="decimal" onClick={handleDecimalClick} className="button">
         .
       </button>
-      <button id="clear" onClick={handleClearClick} className="button">
+      <button id="clear" onClick={handleClearClick} className="button bg-red">
         AC
       </button>
     </main>

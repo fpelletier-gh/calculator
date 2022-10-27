@@ -1,6 +1,15 @@
 :root {
   --border: 1px solid;
+  --teal: #00abb3;
+  --black: #3c4048;
+  --gray: #b2b2b2;
+  --lightgray: #eaeaea;
+  --red: #ff7d7d;
 }
+body {
+  background-color: var(--lightgray);
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -20,10 +29,28 @@
     "seven eight nine"
     "four five six"
     "one two three"
-    "zero decimal equals";
+    "decimal zero equals";
   border: var(--border);
   gap: 5px;
-  padding: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--black);
+}
+
+.bg-red {
+  background-color: var(--red);
+}
+
+.bg-teal {
+  background-color: var(--teal);
+}
+
+.bg-gray {
+  background-color: var(--gray);
+}
+
+.bg-lightgray {
+  background-color: var(--lightgray);
 }
 
 .button {
@@ -40,6 +67,7 @@
   justify-content: flex-end;
   align-items: center;
   padding-right: 5px;
+  background-color: var(--lightgray);
 }
 
 #equals {
