@@ -1,8 +1,9 @@
 import "./App.scss";
+import Numbers from "./components/numbers";
 import { useState, MouseEvent } from "react";
 import { evaluate, isNaN } from "mathjs";
 
-function App() {
+function App(): JSX.Element {
   const [display, setDisplay] = useState<string>("0");
   const [hasDecimal, setHasDecimal] = useState<boolean>(false);
 
@@ -59,76 +60,10 @@ function App() {
       >
         =
       </button>
-      <button
-        id="zero"
-        onClick={handleNumberClick}
-        className="button bg-lightgray"
-      >
-        0
-      </button>
-      <button
-        id="one"
-        onClick={handleNumberClick}
-        className="button bg-lightgray"
-      >
-        1
-      </button>
-      <button
-        id="two"
-        onClick={handleNumberClick}
-        className="button bg-lightgray"
-      >
-        2
-      </button>
-      <button
-        id="three"
-        onClick={handleNumberClick}
-        className="button bg-lightgray"
-      >
-        3
-      </button>
-      <button
-        id="four"
-        onClick={handleNumberClick}
-        className="button bg-lightgray"
-      >
-        4
-      </button>
-      <button
-        id="five"
-        onClick={handleNumberClick}
-        className="button bg-lightgray"
-      >
-        5
-      </button>
-      <button
-        id="six"
-        onClick={handleNumberClick}
-        className="button bg-lightgray"
-      >
-        6
-      </button>
-      <button
-        id="seven"
-        onClick={handleNumberClick}
-        className="button bg-lightgray"
-      >
-        7
-      </button>
-      <button
-        id="eight"
-        onClick={handleNumberClick}
-        className="button bg-lightgray"
-      >
-        8
-      </button>
-      <button
-        id="nine"
-        onClick={handleNumberClick}
-        className="button bg-lightgray"
-      >
-        9
-      </button>
+      <Numbers
+        handleNumberClick={handleNumberClick}
+        className="button bg-ligthgray"
+      />
       <button id="add" onClick={handleOperatorClick} className="button bg-teal">
         +
       </button>
